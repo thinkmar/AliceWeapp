@@ -1,0 +1,141 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  min-height: 100vh;
+  background-color: #f8f8f8;
+}
+
+.panel__content {
+  .example-item {
+    width: 96%;
+    margin-bottom: 20px;
+    margin: 0 auto;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .subitem {
+      display: inline-block;
+      margin-left: 24px;
+    }
+
+    &__desc {
+      margin-bottom: 12px;
+      color: #333;
+      font-size: 24px;
+    }
+  }
+}
+
+.doc-body {
+  min-height: calc(100vh - 180px);
+  background: #fff;
+  box-shadow: 0 26px 163px 0 rgba(0, 0, 0, 0.11);
+  padding-bottom: 60px;
+  padding-bottom: calc(constant(safe-area-inset-bottom) + 60px);
+  padding-bottom: calc(env(safe-area-inset-bottom) + 60px);
+
+  .panel {
+    margin: 32px 0 56px;
+
+    &__title {
+      position: relative;
+      margin-bottom: 50px;
+      padding-left: 50px;
+      color: #6a6a77;
+      font-size: 32px;
+      font-weight: bold;
+      line-height: 1.5;
+
+      &::before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        left: 24px;
+        top: 50%;
+        margin-top: -20px;
+        width: 2PX;
+        height: 40px;
+        background-color: #6190e8;
+        box-shadow: 0 7px 12px 0 rgba(97, 144, 232, 0.2);
+        border-radius: 1PX;
+      }
+    }
+
+    &__content {
+      padding: 0 20px;
+
+      &.no-padding {
+        padding: 0;
+      }
+    }
+  }
+}
+
+.panel__content {
+  &.demo-button {
+    .at-form {
+      padding-left: 0;
+    }
+  }
+
+  .btn-demo-fab {
+    position: fixed;
+    right: 32px;
+    bottom: 32px;
+    z-index: 1100;
+  }
+
+  .btn-item {
+    margin-bottom: 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .subitem {
+      display: inline-block;
+      margin-left: 24px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+.demo-list-item {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: scaleY(0.5);
+    border-bottom: 1PX solid #d6e4ef;
+    transform-origin: center;
+    box-sizing: border-box;
+    pointer-events: none;
+  }
+
+
+  &__label,
+  &__value {
+    color: #333;
+    font-size: 32px;
+    // line-height: 1.5;
+  }
+
+  &__value {
+    color: #999;
+  }
+}

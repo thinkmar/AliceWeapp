@@ -1,0 +1,60 @@
+.page-person {
+  height: 100vh;
+}
+
+.top-info {
+  // background-image: url(../../assets/images/account_bg.png);
+  // background-repeat: no-repeat;
+  // background-size: cover;
+
+  background-image: linear-gradient(90deg, #fa5252, #fa8d7e);
+
+  .top-info-content {
+    // 设置内容居中
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // 设置距离顶部高度
+    margin-top: 10px;
+
+    .avatar {
+      width: 136px;
+      height: 136px;
+    }
+
+    .username {
+      color: #fff;
+      font-size: 36px;
+    }
+
+  }
+
+}
+
+.data-statistics {
+  margin-top: 20px;
+  background-color: #fff;
+  // border-radius: 20px;
+  border-top-left-radius: 26px;
+  border-top-right-radius: 26px;
+
+  .tips_font_size {
+    color: #7f7f7f;
+    font-size: 28px;
+  }
+
+  .number_font_size {
+    color: #fa5453;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+}
+
+.operation {
+  margin-top: 50px;
+  background-color: #fff;
+  border-radius: 20px;
+}

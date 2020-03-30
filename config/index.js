@@ -1,6 +1,6 @@
 const config = {
-  projectName: 'AliceWeapp',
-  date: '2020-3-30',
+  projectName: 'ZmJsWeapp',
+  date: '2020-3-6',
   designWidth: 750,
   deviceRatio: {
     '640': 2.34 / 2,
@@ -21,15 +21,19 @@ const config = {
       'transform-class-properties',
       'transform-object-rest-spread',
       ['transform-runtime', {
-          helpers: false,
-          polyfill: false,
-          regenerator: true,
-          moduleName: 'babel-runtime'
-        }
+        helpers: false,
+        polyfill: false,
+        regenerator: true,
+        moduleName: 'babel-runtime'
+      }
       ]
     ]
   },
-  defineConstants: {
+  defineConstants: {},
+  copy: {
+    patterns: [
+      {from: 'sitemap.json', to: 'dist/sitemap.json'} // 指定需要 copy 的文件
+    ]
   },
   mini: {
     postcss: {
@@ -45,9 +49,7 @@ const config = {
       },
       pxtransform: {
         enable: true,
-        config: {
-
-        }
+        config: {}
       },
       url: {
         enable: true,

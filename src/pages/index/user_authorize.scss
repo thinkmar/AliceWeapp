@@ -1,0 +1,25 @@
+.page {
+  height: 100vh;
+}
+
+.weapp_btn {
+  background-color: #40bb3a;
+  color: white;
+  width: 80%;
+  // font-weight: bold;
+}
+
+.top-info-content {
+  // 设置内容居中
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  // 设置距离顶部高度
+  margin-top: 200px;
+
+  .avatar {
+    width: 180px;
+    height: 180px;
+  }
+}
